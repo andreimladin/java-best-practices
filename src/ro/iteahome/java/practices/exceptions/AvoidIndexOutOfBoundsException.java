@@ -19,14 +19,21 @@ public class AvoidIndexOutOfBoundsException {
         for (int i=0;i<dataSegment.length; i++) {
             System.out.println(dataSegment[i]);
         }
+
+        int position = 2;
+
+        if (0 <= position && position < dataSegment.length) {
+            System.out.println("Am accessat pozitia direct");
+            System.out.println(dataSegment[position]);
+        }
     }
 
     public static void main(String[] args) {
 //        arrayIndexWrongUsage();
 //
-//        arrayIndexGoodUsage();
+        arrayIndexGoodUsage();
 
-        new ThePowerCollection().setNewValue(5, 7);
+//        new ThePowerCollection().setNewValue(5, 7);
     }
 }
 

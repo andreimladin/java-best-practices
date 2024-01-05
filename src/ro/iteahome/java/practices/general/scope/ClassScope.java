@@ -23,6 +23,11 @@ public class ClassScope {
     private static Runnable runnable(PaymentServiceBad paymentServiceBad, String cardNo) {
         return () -> {
             PaymentServiceBad.cardNo = cardNo;
+            try {
+                Thread.sleep(100l);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             paymentServiceBad.doPayment(100);
         };
     }

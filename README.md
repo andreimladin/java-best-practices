@@ -66,7 +66,6 @@
 
 ## General best practices
 * Use the proper scope for a variable
-
 * Primitives - dont waste memory, choose the most appropriate one
 * Use Strings properly
   * concatenations
